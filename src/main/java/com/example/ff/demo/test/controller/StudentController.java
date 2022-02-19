@@ -12,13 +12,14 @@ import org.springframework.stereotype.Controller;
 import javax.annotation.Resource;
 import java.util.List;
 
+
 /**
  * <p>
  *  前端控制器
  * </p>
  *
  * @author fangfang
- * @since 2022-01-30
+ * @since 2022-02-19
  */
 @Controller
 @RequestMapping("/student")
@@ -28,17 +29,18 @@ public class StudentController {
     private StudentServiceImpl studentService;
     @RequestMapping("login")
     @ResponseBody
-   /* @PostMapping(value = "/login")*/
-    public String checkLogin(@RequestBody  Student rev_student){
+    /* @PostMapping(value = "/login")*/
+    public String checkLogin(@RequestBody Student rev_student){
 
         Student student = studentService.checkLogin(rev_student.getId(),rev_student.getPassword());
         System.out.println("student"+student.toString());
-            if(student != null){
-                return JSON.toJSONString(student);
-            }else {
-                return "error";
-            }
+        if(student != null){
+            return JSON.toJSONString(student);
+        }else {
+            return "error";
+        }
     }
+
 
 }
 

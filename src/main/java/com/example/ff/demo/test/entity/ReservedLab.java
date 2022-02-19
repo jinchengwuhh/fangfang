@@ -9,56 +9,58 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-01-30
+ * @since 2022-02-19
  */
 @TableName("reserved_lab")
 public class ReservedLab implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String revLabId;
+    private String revlabId;
 
-    private String lab_name;
+    private String labName;
 
-    private String start_time;
+    private String startTime;
 
-    private String end_time;
+    private String endTime;
 
     private String usefor;
 
     private String mobile;
 
+    private String info;
 
-    public String getRevLabId() {
-        return revLabId;
+
+    public String getRevlabId() {
+        return revlabId;
     }
 
-    public void setRevLabId(String revLabId) {
-        this.revLabId = revLabId;
+    public void setRevlabId(String revlabId) {
+        this.revlabId = revlabId;
     }
 
-    public String getLab_name() {
-        return lab_name;
+    public String getLabName() {
+        return labName;
     }
 
-    public void setLab_name(String lab_name) {
-        this.lab_name = lab_name;
+    public void setLabName(String labName) {
+        this.labName = labName;
     }
 
-    public String getStart_time() {
-        return start_time;
+    public String getStartTime() {
+        return startTime;
     }
 
-    public void setStart_time(String start_time) {
-        this.start_time = start_time;
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
     }
 
-    public String getEnd_time() {
-        return end_time;
+    public String getEndTime() {
+        return endTime;
     }
 
-    public void setEnd_time(String end_time) {
-        this.end_time = end_time;
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
     public String getUsefor() {
@@ -77,15 +79,24 @@ public class ReservedLab implements Serializable {
         this.mobile = mobile;
     }
 
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
     @Override
     public String toString() {
         return "ReservedLab{" +
-        "revLabId=" + revLabId +
-        ", lab_name=" + lab_name +
-        ", startTime=" + start_time +
-        ", endTime=" + end_time +
+        "revlabId=" + revlabId +
+        ", labName=" + labName +
+        ", startTime=" + startTime +
+        ", endTime=" + endTime +
         ", usefor=" + usefor +
         ", mobile=" + mobile +
+        ", info=" + info +
         "}";
     }
 }
