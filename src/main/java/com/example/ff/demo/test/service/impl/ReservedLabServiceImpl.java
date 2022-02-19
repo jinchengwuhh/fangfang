@@ -26,3 +26,4 @@ public class ReservedLabServiceImpl extends ServiceImpl<ReservedLabMapper, Reser
         reservedLabMapper.insert(reservedLab);
     }
 }
+

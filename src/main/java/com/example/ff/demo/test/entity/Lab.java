@@ -8,7 +8,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-01-30
+ * @since 2022-02-19
  */
 public class Lab implements Serializable {
 

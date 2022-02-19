@@ -16,3 +16,4 @@ public interface IReservedLabService extends IService<ReservedLab> {
 
     void appointmentLab(ReservedLab reservedLab);
 }
+

@@ -8,7 +8,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-01-30
+ * @since 2022-02-19
  */
 public class Teacher implements Serializable {
 
@@ -67,7 +67,7 @@ public class Teacher implements Serializable {
 
     @Override
     public String toString() {
-        return "{" +
+        return "Teacher{" +
         "id=" + id +
         ", username=" + username +
         ", password=" + password +

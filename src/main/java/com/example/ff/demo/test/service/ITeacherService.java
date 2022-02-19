@@ -15,3 +15,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ITeacherService extends IService<Teacher> {
     Teacher checkLoginTeacher(String id, String password);
 }
+

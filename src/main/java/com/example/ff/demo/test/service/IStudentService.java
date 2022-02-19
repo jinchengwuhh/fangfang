@@ -15,5 +15,5 @@ import java.util.List;
  */
 public interface IStudentService extends IService<Student> {
 
-   Student checkLogin(String id,String password);
+    Student checkLogin(String id,String password);
 }

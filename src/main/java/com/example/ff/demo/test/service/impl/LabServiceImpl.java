@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author fangfang
- * @since 2022-01-30
+ * @since 2022-02-19
  */
 @Service
 public class LabServiceImpl extends ServiceImpl<LabMapper, Lab> implements ILabService {
