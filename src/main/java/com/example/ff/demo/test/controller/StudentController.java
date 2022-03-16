@@ -1,3 +1,4 @@
+
 package com.example.ff.demo.test.controller;
 
 
@@ -32,9 +33,10 @@ public class StudentController {
     /* @PostMapping(value = "/login")*/
     public String checkLogin(@RequestBody Student rev_student){
 
-        Student student = studentService.checkLogin(rev_student.getId(),rev_student.getPassword());
-        System.out.println("student"+student.toString());
+        Student student = studentService.checkLogin(rev_student.getsId(),rev_student.getsPassword());
+
         if(student != null){
+            System.out.println("student"+student.toString());
             return JSON.toJSONString(student);
         }else {
             return "error";
@@ -43,4 +45,3 @@ public class StudentController {
 
 
 }
-

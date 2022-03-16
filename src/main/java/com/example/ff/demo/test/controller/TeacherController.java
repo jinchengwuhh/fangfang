@@ -32,7 +32,7 @@ public class TeacherController {
     /* @PostMapping(value = "/login")*/
     public String checkLoginTeacher(@RequestBody Teacher rev_teacher){
 
-        Teacher teacher = teacherService.checkLoginTeacher(rev_teacher.getId(),rev_teacher.getPassword());
+        Teacher teacher = teacherService.checkLoginTeacher(rev_teacher.gettId(),rev_teacher.gettPassword());
 
         System.out.println("teacher"+teacher.toString());/**/
         if(teacher != null){

@@ -8,13 +8,13 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-02-19
+ * @since 2022-03-16
  */
 public class Lab implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private String labId;
 
     private String labName;
 
@@ -27,12 +27,12 @@ public class Lab implements Serializable {
     private String time;
 
 
-    public String getId() {
-        return id;
+    public String getLabId() {
+        return labId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setLabId(String labId) {
+        this.labId = labId;
     }
 
     public String getLabName() {
@@ -78,7 +78,7 @@ public class Lab implements Serializable {
     @Override
     public String toString() {
         return "Lab{" +
-        "id=" + id +
+        "labId=" + labId +
         ", labName=" + labName +
         ", state=" + state +
         ", place=" + place +

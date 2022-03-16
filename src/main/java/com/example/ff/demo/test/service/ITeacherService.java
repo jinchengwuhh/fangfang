@@ -13,6 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2022-01-30
  */
 public interface ITeacherService extends IService<Teacher> {
-    Teacher checkLoginTeacher(String id, String password);
+    Teacher checkLoginTeacher(String tId, String tPassword);
 }
-

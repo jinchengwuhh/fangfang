@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author fangfang
- * @since 2022-02-19
+ * @since 2022-03-16
  */
 public interface LabMapper extends BaseMapper<Lab> {
 

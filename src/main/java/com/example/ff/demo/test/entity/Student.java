@@ -8,53 +8,55 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-02-19
+ * @since 2022-03-16
  */
 public class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private String sId;
 
-    private String username;
+    private String sName;
 
-    private String password;
+    private String sPassword;
 
     private String sex;
 
-    private String academy;
+    private String sAcademy;
 
     private String major;
 
-    private String clazzid;
+    private String clazzId;
 
-    private String clazzname;
+    private String clazz;
 
     private String credit;
 
+    private String sTel;
 
-    public String getId() {
-        return id;
+
+    public String getsId() {
+        return sId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setsId(String sId) {
+        this.sId = sId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getsName() {
+        return sName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setsName(String sName) {
+        this.sName = sName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getsPassword() {
+        return sPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setsPassword(String sPassword) {
+        this.sPassword = sPassword;
     }
 
     public String getSex() {
@@ -65,12 +67,12 @@ public class Student implements Serializable {
         this.sex = sex;
     }
 
-    public String getAcademy() {
-        return academy;
+    public String getsAcademy() {
+        return sAcademy;
     }
 
-    public void setAcademy(String academy) {
-        this.academy = academy;
+    public void setsAcademy(String sAcademy) {
+        this.sAcademy = sAcademy;
     }
 
     public String getMajor() {
@@ -81,20 +83,20 @@ public class Student implements Serializable {
         this.major = major;
     }
 
-    public String getClazzid() {
-        return clazzid;
+    public String getClazzId() {
+        return clazzId;
     }
 
-    public void setClazzid(String clazzid) {
-        this.clazzid = clazzid;
+    public void setClazzId(String clazzId) {
+        this.clazzId = clazzId;
     }
 
-    public String getClazzname() {
-        return clazzname;
+    public String getClazz() {
+        return clazz;
     }
 
-    public void setClazzname(String clazzname) {
-        this.clazzname = clazzname;
+    public void setClazz(String clazz) {
+        this.clazz = clazz;
     }
 
     public String getCredit() {
@@ -105,18 +107,27 @@ public class Student implements Serializable {
         this.credit = credit;
     }
 
+    public String getsTel() {
+        return sTel;
+    }
+
+    public void setsTel(String sTel) {
+        this.sTel = sTel;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
-        "id=" + id +
-        ", username=" + username +
-        ", password=" + password +
+        "sId=" + sId +
+        ", sName=" + sName +
+        ", sPassword=" + sPassword +
         ", sex=" + sex +
-        ", academy=" + academy +
+        ", sAcademy=" + sAcademy +
         ", major=" + major +
-        ", clazzid=" + clazzid +
-        ", clazzname=" + clazzname +
+        ", clazzId=" + clazzId +
+        ", clazz=" + clazz +
         ", credit=" + credit +
+        ", sTel=" + sTel +
         "}";
     }
 }

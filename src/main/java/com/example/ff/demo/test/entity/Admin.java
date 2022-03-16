@@ -8,43 +8,43 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-02-19
+ * @since 2022-03-16
  */
 public class Admin implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private String aId;
 
-    private String username;
+    private String aName;
 
-    private String password;
+    private String aPassword;
 
     private String aTel;
 
 
-    public String getId() {
-        return id;
+    public String getaId() {
+        return aId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setaId(String aId) {
+        this.aId = aId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getaName() {
+        return aName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setaName(String aName) {
+        this.aName = aName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getaPassword() {
+        return aPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setaPassword(String aPassword) {
+        this.aPassword = aPassword;
     }
 
     public String getaTel() {
@@ -58,9 +58,9 @@ public class Admin implements Serializable {
     @Override
     public String toString() {
         return "Admin{" +
-        "id=" + id +
-        ", username=" + username +
-        ", password=" + password +
+        "aId=" + aId +
+        ", aName=" + aName +
+        ", aPassword=" + aPassword +
         ", aTel=" + aTel +
         "}";
     }

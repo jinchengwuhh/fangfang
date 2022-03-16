@@ -23,9 +23,9 @@ import java.util.List;
 public class StudentServiceImpl extends ServiceImpl<StudentMapper, Student> implements IStudentService {
 
     @Override
-    public Student checkLogin(String id, String password) {
-        if (this.getOne(new QueryWrapper<Student>().eq("id" , id).eq("password" , password)) != null) {
-            return this.getById(id);
+    public Student checkLogin(String sId, String sPassword) {
+        if (this.getOne(new QueryWrapper<Student>().eq("s_id" , sId).eq("s_password" , sPassword)) != null) {
+            return getById(sId);
         } else {
             return null;
         }

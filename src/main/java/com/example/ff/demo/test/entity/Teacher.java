@@ -8,53 +8,53 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-02-19
+ * @since 2022-03-16
  */
 public class Teacher implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private String tId;
 
-    private String username;
+    private String tName;
 
-    private String password;
+    private String tPassword;
 
-    private String academy;
+    private String tAcademy;
 
     private String tTel;
 
 
-    public String getId() {
-        return id;
+    public String gettId() {
+        return tId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void settId(String tId) {
+        this.tId = tId;
     }
 
-    public String getUsername() {
-        return username;
+    public String gettName() {
+        return tName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void settName(String tName) {
+        this.tName = tName;
     }
 
-    public String getPassword() {
-        return password;
+    public String gettPassword() {
+        return tPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void settPassword(String tPassword) {
+        this.tPassword = tPassword;
     }
 
-    public String getAcademy() {
-        return academy;
+    public String gettAcademy() {
+        return tAcademy;
     }
 
-    public void setAcademy(String academy) {
-        this.academy = academy;
+    public void settAcademy(String tAcademy) {
+        this.tAcademy = tAcademy;
     }
 
     public String gettTel() {
@@ -68,10 +68,10 @@ public class Teacher implements Serializable {
     @Override
     public String toString() {
         return "Teacher{" +
-        "id=" + id +
-        ", username=" + username +
-        ", password=" + password +
-        ", academy=" + academy +
+        "tId=" + tId +
+        ", tName=" + tName +
+        ", tPassword=" + tPassword +
+        ", tAcademy=" + tAcademy +
         ", tTel=" + tTel +
         "}";
     }

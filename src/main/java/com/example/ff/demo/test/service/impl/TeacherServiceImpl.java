@@ -19,9 +19,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> implements ITeacherService {
     @Override
-    public Teacher checkLoginTeacher(String id, String password) {
-        if (this.getOne(new QueryWrapper<Teacher>().eq("id" , id).eq("password" , password)) != null) {
-            return this.getById(id);
+    public Teacher checkLoginTeacher(String tId, String tPassword) {
+        if (this.getOne(new QueryWrapper<Teacher>().eq("t_id" , tId).eq("t_password" , tPassword)) != null) {
+            return this.getById(tId);
         } else {
             return null;
         }
