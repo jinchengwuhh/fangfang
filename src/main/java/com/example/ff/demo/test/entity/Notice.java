@@ -1,5 +1,7 @@
 package com.example.ff.demo.test.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
 
 /**
@@ -13,6 +15,7 @@ import java.io.Serializable;
 public class Notice implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @TableId
 
     private String nId;
 

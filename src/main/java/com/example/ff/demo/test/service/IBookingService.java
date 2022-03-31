@@ -14,5 +14,7 @@ import org.apache.ibatis.annotations.Insert;
  */
 public interface IBookingService extends IService<Booking> {
 
-    void appointmentLab(Booking booking);
+    void findBookingLabById (String uId);
+    void add(Booking booking);
+    void delBookingLabById (String uId);
 }

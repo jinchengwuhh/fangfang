@@ -1,5 +1,8 @@
 package com.example.ff.demo.test.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.io.Serializable;
 
 /**
@@ -14,6 +17,7 @@ public class Booking implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+  /* @TableId("uId")*/
     private String labId;
 
     private String labName;
@@ -28,11 +32,12 @@ public class Booking implements Serializable {
 
     private String other;
 
+    @TableId(value = "u_id",type = IdType.AUTO)
     private String uId;
 
     private String bId;
 
-    private String check;
+    private String checkk;
 
     private String tel;
 
@@ -109,12 +114,12 @@ public class Booking implements Serializable {
         this.bId = bId;
     }
 
-    public String getCheck() {
-        return check;
+    public String getCheckk() {
+        return checkk;
     }
 
-    public void setCheck(String check) {
-        this.check = check;
+    public void setCheckk(String check) {
+        this.checkk = check;
     }
 
     public String getTel() {
@@ -137,7 +142,7 @@ public class Booking implements Serializable {
         ", other=" + other +
         ", uId=" + uId +
         ", bId=" + bId +
-        ", check=" + check +
+        ", check=" + checkk +
         ", tel=" + tel +
         "}";
     }

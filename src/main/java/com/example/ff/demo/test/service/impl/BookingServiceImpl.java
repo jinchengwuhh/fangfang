@@ -19,10 +19,19 @@ import org.springframework.stereotype.Service;
 public class BookingServiceImpl extends ServiceImpl<BookingMapper, Booking> implements IBookingService {
 
     //添加
-    @Autowired
+
     private BookingMapper bookingMapper;
+
     @Override
-    public void appointmentLab(Booking booking) {
+    public void add(Booking booking) {
         bookingMapper.insert(booking);
+    }
+    @Override
+    public void findBookingLabById(String uId) {
+        bookingMapper.selectById(uId);
+    }
+    @Override
+    public void delBookingLabById(String bId){
+        bookingMapper.deleteById(bId);
     }
 }

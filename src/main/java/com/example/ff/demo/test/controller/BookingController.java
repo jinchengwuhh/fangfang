@@ -24,22 +24,27 @@ import javax.annotation.Resource;
 public class BookingController {
     @Resource
     private BookingServiceImpl bookingService;
-    @RequestMapping("appointment")
-    @ResponseBody
-    public boolean appointmentLab(@RequestBody Booking booking){
-        try {
-            bookingService.appointmentLab(booking);
-        }catch (Exception e){
-            e.printStackTrace();
-            return false;
-        }
-        return true;
-    }
+
     @RequestMapping("add.do")
     @ResponseBody
     public boolean add(@RequestBody  Booking booking){
-        System.out.println(booking);
+       // System.out.println(booking);
         return bookingService.save(booking);
+    }
+    @RequestMapping("findById")
+    @ResponseBody
+    public Booking findBookingLabById(@RequestBody  Booking booking){
+       // System.out.println(booking);
+        //System.out.println(booking.getuId());
+        return bookingService.getById(booking.getuId());
+    }
+    @RequestMapping("delById")
+    @ResponseBody
+    public boolean delBookingLabById(@RequestBody  Booking booking){
+        // System.out.println(booking);
+        //System.out.println(booking.getuId());
+        return bookingService.removeById(booking.getbId());
+       //return bookingService.getById(booking.getuId());
     }
 
 }
