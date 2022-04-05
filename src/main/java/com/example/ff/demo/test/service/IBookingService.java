@@ -2,7 +2,6 @@ package com.example.ff.demo.test.service;
 
 import com.example.ff.demo.test.entity.Booking;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.ibatis.annotations.Insert;
 
 /**
  * <p>
@@ -16,5 +15,5 @@ public interface IBookingService extends IService<Booking> {
 
     void findBookingLabById (String uId);
     void add(Booking booking);
-    void delBookingLabById (String uId);
+    void delBookingLabById (Integer bId);
 }

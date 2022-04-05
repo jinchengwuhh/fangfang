@@ -2,7 +2,6 @@ package com.example.ff.demo.test.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-
 import java.io.Serializable;
 
 /**
@@ -11,13 +10,12 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-03-16
+ * @since 2022-03-31
  */
 public class Booking implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-  /* @TableId("uId")*/
     private String labId;
 
     private String labName;
@@ -31,15 +29,17 @@ public class Booking implements Serializable {
     private String mobile;
 
     private String other;
+    @TableId(value = "u_id", type = IdType.AUTO)
 
-    @TableId(value = "u_id",type = IdType.AUTO)
     private String uId;
 
-    private String bId;
+    private Integer bId;
 
     private String checkk;
 
     private String tel;
+
+    private String code;
 
 
     public String getLabId() {
@@ -106,11 +106,11 @@ public class Booking implements Serializable {
         this.uId = uId;
     }
 
-    public String getbId() {
+    public Integer getbId() {
         return bId;
     }
 
-    public void setbId(String bId) {
+    public void setbId(Integer bId) {
         this.bId = bId;
     }
 
@@ -118,8 +118,8 @@ public class Booking implements Serializable {
         return checkk;
     }
 
-    public void setCheckk(String check) {
-        this.checkk = check;
+    public void setCheckk(String checkk) {
+        this.checkk = checkk;
     }
 
     public String getTel() {
@@ -128,6 +128,14 @@ public class Booking implements Serializable {
 
     public void setTel(String tel) {
         this.tel = tel;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     @Override
@@ -142,8 +150,9 @@ public class Booking implements Serializable {
         ", other=" + other +
         ", uId=" + uId +
         ", bId=" + bId +
-        ", check=" + checkk +
+        ", checkk=" + checkk +
         ", tel=" + tel +
+        ", code=" + code +
         "}";
     }
 }

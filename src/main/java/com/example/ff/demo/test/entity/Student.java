@@ -10,12 +10,12 @@ import java.io.Serializable;
  * </p>
  *
  * @author fangfang
- * @since 2022-03-16
+ * @since 2022-03-31
  */
 public class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @TableId
+     @TableId
     private String sId;
 
     private String sName;

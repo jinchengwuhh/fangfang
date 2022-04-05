@@ -4,7 +4,6 @@ import com.example.ff.demo.test.entity.Booking;
 import com.example.ff.demo.test.mapper.BookingMapper;
 import com.example.ff.demo.test.service.IBookingService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -31,7 +30,7 @@ public class BookingServiceImpl extends ServiceImpl<BookingMapper, Booking> impl
         bookingMapper.selectById(uId);
     }
     @Override
-    public void delBookingLabById(String bId){
+    public void delBookingLabById(Integer bId){
         bookingMapper.deleteById(bId);
     }
 }
