@@ -16,5 +16,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class NoticeServiceImpl extends ServiceImpl<NoticeMapper, Notice> implements INoticeService {
-
+    private NoticeMapper noticeMapper;
+    @Override
+    public void findBynId(Integer nId) {
+        noticeMapper.selectById(nId);
+    }
 }

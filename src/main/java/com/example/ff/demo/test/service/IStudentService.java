@@ -16,4 +16,5 @@ import java.util.List;
 public interface IStudentService extends IService<Student> {
 
     Student checkLogin(String sId,String sPassword);
+    boolean updateStudentPassword(Student s_changePassword);
 }

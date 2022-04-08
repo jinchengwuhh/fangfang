@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2022-03-31
  */
 public interface INoticeService extends IService<Notice> {
-
+    void findBynId(Integer nId);
 }

@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements IAdminService {
     @Override
     public Admin checkLoginAdmin(String aId, String aPassword) {
-        if (this.getOne(new QueryWrapper<Admin>().eq("id" , aId).eq("password" , aPassword)) != null) {
+        if (this.getOne(new QueryWrapper<Admin>().eq("a_id" , aId).eq("a_password" , aPassword)) != null) {
             return this.getById(aId);
         } else {
             return null;

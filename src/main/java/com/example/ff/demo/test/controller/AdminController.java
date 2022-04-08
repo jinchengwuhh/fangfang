@@ -23,7 +23,7 @@ import javax.annotation.Resource;
  * @since 2022-03-16
  */
 @Controller
-@RequestMapping("/test/admin")
+@RequestMapping("/admin")
 public class AdminController {
     @Resource
     private AdminServiceImpl AdminService;

@@ -2,6 +2,7 @@ package com.example.ff.demo.test.controller;
 
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.example.ff.demo.test.entity.Student;
 import com.example.ff.demo.test.entity.Teacher;
 import com.example.ff.demo.test.service.impl.StudentServiceImpl;
@@ -40,6 +41,15 @@ public class TeacherController {
         }else {
             return "error";
         }
+    }
+    /*修改密码*/
+    @RequestMapping("updateTeacherPassword")
+    @ResponseBody
+    public boolean updateTeacherPassword(@RequestBody Teacher teacher){
+        UpdateWrapper<Teacher> teacherUpdateWrapper = new UpdateWrapper<>();
+        teacherUpdateWrapper.eq("t_id", teacher.gettId()).set("t_password", teacher.gettPassword());
+
+        return teacherService.update(teacherUpdateWrapper);
     }
 }
 
